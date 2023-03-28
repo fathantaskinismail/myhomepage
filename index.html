@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tab</title>
+    <link rel="icon" href="image/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24cec18428.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section id="fullpage">
+    <div class='child'><main>
+        <div class="atom">
+            <div class="electron"></div>
+            <div class="electron-alpha"></div>
+            <div class="electron-omega"></div>
+        </div>
+    </main></div>
+    <div class="codeingwritten">
+        <h2>Coding is love</h2>
+        <div id="search-container" style="margin-top: 3%;margin-left: 37%;">
+            <div id="search-input-container">
+              <img src="https://assets.codepen.io/1468070/Google+G+Icon.png" alt="" />
+              <input type="text" placeholder="Search anything" id="search" />
+            </div>
+    
+            <button id="image-button" onclick="googleSearch();" type="button">
+              <i class="fa-regular fa-search"></i>
+            </button>
+    
+            <button id="mic-button" type="button">
+              <i class="fa-regular fa-microphone"></i>
+            </button>        
+            </div>
+</section>
+<section id="icons">
+    <div class="iconwrapper">
+    <div class="youtube">
+        <a href="https://www.youtube.com/" title="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+       <span>YouTube</span>  
+    </a> 
+    </div>
+    <div class="gmail">
+        <a href="https://mail.google.com/mail/u/0/#inbox" title="Inbox">
+        <i class="fa-solid fa-envelope"></i>
+       <span>Inbox</span> 
+    </a>
+    </div>
+    <div class="facebook">
+        <a href="https://www.facebook.com/home.php" title="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      <span> Facebook</span>
+    </a> 
+    </div>
+    <div class="linkedin">
+        <a href="https://www.linkedin.com/feed/" title="Linked In">
+        <i class="fa-brands fa-linkedin-in"></i>
+      <span> Linked In</span>
+    </a> 
+    </div>
+    <div class="icon">
+        <a href="https://fontawesome.com/search" title="Font Awesome">
+        <i class="fa-solid fa-font-awesome"></i>
+      <span> Font </span>
+      <span class="span2">Awesome</span>
+    </a> 
+    </div>
+    <div class="font">
+        <a href="https://fonts.google.com/" title="Browse Fonts">
+            
+            <i class="fa-solid fa-font"></i>
+       <span> Browse </span>
+       <span class="span2forA">Fonts</span>
+    </a> 
+    </div>
+    <div class="github">
+        <a href="https://github.com/" title="Github Profile">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+        <span class="span2forgithub">Profile</span>
+    </a>
+    </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="myname">
+        <i class="fa fa-light fa-copyright"></i><span> Copyright 2023 . All rights reserved . Designed by -- </span>
+        <a id="myownname" title="Don't CLICK !" href="file:///C:/Users/ac/Documents/GitHub/homepage.github.io/image/monkey.jpg" onclick="amarnamer();">Farhan Taskin Ismail</a>
+    </div>
+</footer>
+<script type="text/javascript">
+    function googleSearch()
+    {
+        var text=document.getElementById("search").value;
+        var cleanQuery = text.replace(" ","+",text);
+        var url='http://www.google.com/search?q='+cleanQuery;
+    
+        window.location.href=url;
+    }
+    function amarnamer(){
+      return alert("Amar nam dekhlei click korte issa hoi tai na?                                       Valo hoiye jau MASUD  !  👻 " );
+
+    }
+    </script>
+  <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script>
+</body>
+</html>
